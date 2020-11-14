@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+img{
+  width: 100%;
+}
+
+:root{
+  --mainColor: #333;
+  --secondColor: #bfbcbc;
+}
+
+/* HEADER */
+
+header{
+  padding-top: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+header img{
+  width: 8rem;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px){
+  header img{
+    width: 6rem;
+  }
+}
+
+.text__header h1{
+  font-size: 1.5rem;
+  color: var(--mainColor);
+}
+
+.text__header p{
+  padding-top: .5rem;
+  font-size: .8rem;
+  color: var(--secondColor);
+}
+
+.social__media{
+  padding-top: 1rem;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px){
+  .social__media{
+    width: 40%;
+  }
+}
+
+@media (max-width: 1000px){
+  .social__media{
+    width: 45%;
+  }
+}
+
+@media (max-width: 900px){
+  .social__media{
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px){
+  .social__media{
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px){
+  .social__media{
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px){
+  .social__media{
+    width: 90%;
+  }
+}
+
+.card{
+  background-color: rgba(191, 188, 188, .5);
+  color: var(--mainColor);
+  border-radius: 10px;
+  width: 8rem;
+  padding: .5rem;
+}
+
+@media (max-width: 768px){
+  .card{
+    width: 6rem;
+  }
+}
+
+.card h3{
+  font-size: .9rem;
+}
+
+/* SECTION PHOTOS */
+
+.images_posts{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  margin-bottom: 5rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+@media (max-width: 768px){
+  .images_posts{
+    width: 90%;
+    column-gap: 3px;
+    grid-row-gap: 3px;
+  }
+}
+
+.images_posts img{
+  border-radius: 10px;
+}
+
+.images_posts img:nth-child(2){
+  grid-column: 2 / 4;
+}
+
+.images_posts img:nth-child(3){
+  grid-column: 1 / 3;
+}
+
+.images_posts img:nth-child(4){
+  border-radius: 20px;
+  grid-row: -3 / -1;
+  grid-column: 3 / 4; 
+}
+
+/* FOOTER */
+
+footer{
+  text-align: center;
+  padding-bottom: 2rem;
+}
